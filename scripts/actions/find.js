@@ -8,8 +8,8 @@
  */
 const isItThere = (arrOfStrings, toFind) => {
   let exists = false;
-  for (let _ of _) {
-
+  for (let item of arrOfStrings) {
+    if (item === toFind) exists = true;
   }
   return exists;
 };
@@ -53,13 +53,10 @@ describe('isItThere checks if a certain string is in an array of strings', () =>
   });
 });
 
-
-
-
 // allow users to interact with the function
 //  (this handler works!)
 const findValueHandler = () => {
-  debugger;
+ // debugger;
 
   console.log('-- action: find value --');
   console.log('inputsArray:', typeof inputsArray, '\n', inputsArray);
@@ -80,10 +77,10 @@ const findValueHandler = () => {
     alert(`did not find: \n${toFind}`);
     found = null;
     return;
+  } else {
+
+    found = toFind;
   }
-
-  found = toFind;
-
   console.log('found (after):', typeof found, '\n', found);
 
   displayFoundHandler();

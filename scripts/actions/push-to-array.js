@@ -1,7 +1,7 @@
 'use strict';
 
 const pushToArrayHandler = () => {
-  debugger;
+//  debugger;
   console.log('-- action: push to array --');
   console.log('inputsArray (before):', typeof inputsArray, '\n', inputsArray);
 
@@ -14,7 +14,7 @@ const pushToArrayHandler = () => {
   }
 
   // push the new value into the shared array
-  _.push(_);
+  inputsArray.push(newInput);
 
 
   console.log('inputsArray (after):', typeof inputsArray, '\n', inputsArray);

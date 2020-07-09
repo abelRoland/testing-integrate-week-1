@@ -1,4 +1,4 @@
-# Testing: integrate, week 2
+# Testing: integrate, week 1
 
 This week you will practice storing user input an array and finding saved values.
 
